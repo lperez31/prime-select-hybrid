@@ -1,4 +1,4 @@
-# prime-select for hybrid laptops
+# prime-select for deep learning users on hybrid laptops
 
 ## What is it?
 
