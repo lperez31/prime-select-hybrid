@@ -2,11 +2,9 @@
 
 ## What is it?
 
-On hybrid GPU laptopts with Ubuntu 18.04, the prime-select utility enables you to choose between intel and nvidia GPU.
+A modified version of prime-select. It adds an 'hybrid' profile in which the Nvidia GPU is available for tensorflow or pytorch, while the graphics remain on Intel GPU.
 
-However, it does not let you use your intel GPU for display and your nvidia GPU for deep learning with tensorflow or pytorch.
-
-This repo contains a modified version of prime-select, which adds an 'hybrid' mode: display on intel GPU and deep learning on nvidia GPU.
+It works on Ubuntu 18.04.
 
 ## Installation
 
@@ -14,6 +12,14 @@ This repo contains a modified version of prime-select, which adds an 'hybrid' mo
 * Replace /usr/bin/prime-select by the version of this repo
 
 ## Usage
+
+To switch to the hybrid profile:
+
+```
+sudo prime-select hybrid
+```
+
+Other options remain similar to standard prime-select command:
 
 ```
 prime-select   nvidia|intel|hybrid|query
